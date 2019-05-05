@@ -1,1 +1,45 @@
 // Your code goes here
+
+// Global effect on page Load
+
+window.addEventListener("load", (event) => {
+    alert("Welcome to the Fun Bus!");
+
+});
+
+window.addEventListener("resize", (event) => {
+    console.log("reportWindowSize");
+});
+
+//NAV Link effects
+
+let navColor = document.querySelectorAll(".nav-link");
+navColor.forEach((i) =>{
+    i.addEventListener("click", (event) => {
+        event.target.style.color = "darkOrange";
+        setTimeout(()=> {
+            event.target.style.color = "";
+        }, 500);
+    }, false);
+});
+
+//Header Logo
+
+let logoHead = document.getElementByClassName("logo-heading");
+logoHead.addEventListener("drag", (event) => {  
+});
+
+//H2 elements color Orange
+
+let mainHead = document.querySelectorAll("h2");
+mainHead.forEach((i) =>{
+    i.addEventListener("mouseover", (event) => {
+        event.target.style.color = "darkOrange";
+        setTimeout(()=> {
+            event.target.style.color = "";
+        }, 500);
+    }, false);
+});
+
+
+
