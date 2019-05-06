@@ -25,7 +25,7 @@ navColor.forEach((i) =>{
 
 //Header Logo
 
-let logoHead = document.getElementByClassName("logo-heading");
+let logoHead = document.querySelector(".logo-heading");
 logoHead.addEventListener("drag", (event) => {  
 });
 
@@ -41,5 +41,9 @@ mainHead.forEach((i) =>{
     }, false);
 });
 
-
-
+let btnMessage = document.querySelectorAll(".btn");
+btnMessage.forEach((i) => {
+    i.addEventListener("dblclick", (event) => {
+        alert("Thank you for visiting Fun Bus");
+    });
+});
