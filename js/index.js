@@ -53,3 +53,20 @@ btnMessage.forEach((i) => {
     });
 });
 
+//Events on input field. 
+
+let formFocus = document.querySelector(".form");
+
+formFocus.addEventListener("focus", (event) => {
+    event.target.style.background = "lightsteelblue";
+}, true);
+
+let formBlur = document.querySelector(".form");
+formBlur.addEventListener("blur", (event) => {
+    event.target.style.background = "";
+}, true);
+
+let formKey = document.querySelector(".form");
+formKey.addEventListener("keydown", (event) => {
+    console.log(event.code);
+})
