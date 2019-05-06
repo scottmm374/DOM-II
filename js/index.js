@@ -1,11 +1,13 @@
 // Your code goes here
 
-// Global effect on page Load
+// Page load alert
 
 window.addEventListener("load", (event) => {
     alert("Welcome to the Fun Bus!");
 
 });
+
+//Resize 
 
 window.addEventListener("resize", (event) => {
     console.log("reportWindowSize");
@@ -41,9 +43,13 @@ mainHead.forEach((i) =>{
     }, false);
 });
 
+
+//Button events 
+
 let btnMessage = document.querySelectorAll(".btn");
 btnMessage.forEach((i) => {
     i.addEventListener("dblclick", (event) => {
         alert("Thank you for visiting Fun Bus");
     });
 });
+
